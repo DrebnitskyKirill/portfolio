@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#6aa3ff"/>
+      <stop offset="100%" stop-color="#9b72ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="64" fill="#111418"/>
+  <circle cx="128" cy="96" r="52" fill="url(#g)"/>
+  <rect x="48" y="160" width="160" height="60" rx="30" fill="url(#g)" opacity="0.6"/>
+  <text x="128" y="110" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="700" fill="#0b0d10">ИФ</text>
+  <title>Avatar</title>
+  <desc>Placeholder avatar</desc>
+</svg>
+

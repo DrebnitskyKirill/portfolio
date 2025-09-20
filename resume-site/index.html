@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Резюме — Имя Фамилия</title>
+    <meta name="description" content="Персональное резюме и портфолио. Опыт, проекты, контакты." />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#home" aria-label="На главную">
+        <img class="brand__avatar" src="./assets/avatar.svg" alt="Аватар" />
+        <span class="brand__name">Имя Фамилия</span>
+      </a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему" title="Тема">◎</button>
+        <a href="#about" class="nav-link">Обо мне</a>
+        <a href="#experience" class="nav-link">Опыт</a>
+        <a href="#projects" class="nav-link">Проекты</a>
+        <a href="#writing" class="nav-link">Публикации</a>
+        <a href="#contact" class="nav-link">Контакты</a>
+      </nav>
+    </header>
+
+    <main id="home" class="site-main">
+      <section class="hero" aria-label="Вступление">
+        <div class="hero__content container">
+          <h1 class="hero__title">Привет, я <span class="accent">Имя</span>.</h1>
+          <p class="hero__subtitle">Строю чистые, быстрые и доступные цифровые продукты.</p>
+          <div class="hero__actions">
+            <a class="button primary" href="#projects">Смотреть проекты</a>
+            <a class="button" href="#contact">Связаться</a>
+          </div>
+          <ul class="social" aria-label="Социальные ссылки">
+            <li><a href="#" aria-label="GitHub" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="#" aria-label="LinkedIn" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="#" aria-label="Twitter" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal" aria-label="Обо мне">
+        <div class="container">
+          <h2 class="section__title">Обо мне</h2>
+          <p class="lead">
+            Я продуктовый инженер с упором на фронтенд и доводку UX до идеала. Люблю
+            простые интерфейсы, высокую производительность и доступность.
+          </p>
+          <div class="grid two">
+            <div>
+              <h3>Навыки</h3>
+              <ul class="tags">
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>CSS/Accessibility</li>
+                <li>Design Systems</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Инструменты</h3>
+              <ul class="tags">
+                <li>Vite</li>
+                <li>Next.js</li>
+                <li>Playwright</li>
+                <li>Vitest</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section reveal" aria-label="Опыт">
+        <div class="container">
+          <h2 class="section__title">Опыт</h2>
+          <ul class="timeline">
+            <li class="card">
+              <header class="card__header">
+                <h3>Старший фронтенд-инженер · Компания А</h3>
+                <span class="meta">2022 — Настоящее время</span>
+              </header>
+              <p>Вел разработку дизайн-системы, внедрил SSR/ISR, ускорил загрузку страниц на 40%.</p>
+            </li>
+            <li class="card">
+              <header class="card__header">
+                <h3>Фронтенд-инженер · Компания Б</h3>
+                <span class="meta">2020 — 2022</span>
+              </header>
+              <p>Разработал архитектуру микрофронтендов, улучшил Lighthouse до 95+.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal" aria-label="Проекты">
+        <div class="container">
+          <h2 class="section__title">Избранные проекты</h2>
+          <div class="grid three">
+            <article class="card project">
+              <h3 class="project__title">Project One</h3>
+              <p class="project__desc">Короткое описание проекта и ключевой ценности.</p>
+              <div class="project__meta">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+              </div>
+              <a class="button subtle" href="#">Открыть</a>
+            </article>
+            <article class="card project">
+              <h3 class="project__title">Project Two</h3>
+              <p class="project__desc">Короткое описание проекта и ключевой ценности.</p>
+              <div class="project__meta">
+                <span class="tag">Node.js</span>
+                <span class="tag">GraphQL</span>
+              </div>
+              <a class="button subtle" href="#">Открыть</a>
+            </article>
+            <article class="card project">
+              <h3 class="project__title">Project Three</h3>
+              <p class="project__desc">Короткое описание проекта и ключевой ценности.</p>
+              <div class="project__meta">
+                <span class="tag">Next.js</span>
+                <span class="tag">Edge</span>
+              </div>
+              <a class="button subtle" href="#">Открыть</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="writing" class="section reveal" aria-label="Публикации">
+        <div class="container">
+          <h2 class="section__title">Публикации</h2>
+          <ul class="list">
+            <li class="list__item">
+              <a href="#">Паттерны производительности в React</a>
+              <span class="meta">2024</span>
+            </li>
+            <li class="list__item">
+              <a href="#">Доступность без боли: практический гид</a>
+              <span class="meta">2023</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal" aria-label="Контакты">
+        <div class="container">
+          <h2 class="section__title">Контакты</h2>
+          <p class="lead">Открыт к предложениям и совместным проектам.</p>
+          <div class="contact">
+            <a class="button primary" href="mailto:you@example.com">you@example.com</a>
+            <a class="button" href="#">Скачать CV</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Имя Фамилия. Все права защищены.</small>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+  </html>
+
